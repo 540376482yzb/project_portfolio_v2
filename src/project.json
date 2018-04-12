@@ -1,0 +1,15 @@
+[
+	{
+		"title": "Ride and share",
+		"stacks": ["React", "Redux", "Express", "Mongodb", "Google Map API", "Socket.io"],
+		"desc": [
+			"This app aims to provide a completely community driven ride sharing services, in which people have freedom to exchange trip infomation and ride together.",
+			"Besides MERN stack, this app used Google Map API to predict and autocomplete location address and utilized Socket.io library to enable real-time communication within the app"
+		],
+		"imgUrl": "https://i.imgur.com/uUqtFN4.png?2",
+		"links": [
+			"https://kind-lamport-ae36bd.netlify.com/landing",
+			"https://github.com/540376482yzb/intercities_ride_sharing_client"
+		]
+	}
+]

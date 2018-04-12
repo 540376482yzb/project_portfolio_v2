@@ -1,0 +1,55 @@
+.outer-menu-container {
+	display: block;
+	margin-top: 30px;
+	width: 100%;
+	background-color: #3949ab;
+	padding-left: 0;
+}
+.inner-menu-container {
+	display: flex;
+	background-color: white;
+	width: 100%;
+	-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+	clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 40px;
+	margin: 0;
+	min-height: 60px;
+}
+
+.nav-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: black;
+	cursor: pointer;
+}
+.nav-item:hover {
+	color: #3949ab;
+}
+.focus {
+	color: #3949ab;
+}
+.nav-item span {
+	display: inline-block;
+}
+.nav-tiem a {
+	display: inline-block;
+	min-height: 36px;
+}
+.tab-icon-container {
+	width: 36px;
+}
+.tab-icon {
+	fill: currentColor;
+	animation-duration: 0.2s;
+	animation-delay: 0.2s;
+	-moz-animation-duration: 0.2s;
+	-moz-animation-delay: 0.2s;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
