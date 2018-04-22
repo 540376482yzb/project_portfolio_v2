@@ -26,9 +26,8 @@ export default function About(props) {
 						together while remain non-opinionated at the same time.
 					</p>
 					<p>
-						<cite>"A man becomes learned by asking questions."</cite> The most important reason I
-						study web develpoment is because of how inclusive and embrassing this community. To stay
-						relevant with tending technology we all have to learn to give and take, because we are
+						Wise man once said<cite>"A man becomes learned by asking questions."</cite> To stay
+						relevant with tending technology we all have to learn from and share with each other, because we are
 						insignificant as individual but we are able to achieve the impossible as a whole.
 					</p>
 					<br />
