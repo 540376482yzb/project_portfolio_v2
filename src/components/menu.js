@@ -3,7 +3,7 @@ import React from "react"
 import "./menu.css"
 import { ChevronRightIcon } from "mdi-react"
 
-export default class Brand extends React.Component {
+export default class Menu extends React.Component {
 	constructor(props) {
 		super(props)
 		this.handleClick = this.handleClick.bind(this)
@@ -13,11 +13,52 @@ export default class Brand extends React.Component {
 		}
 	}
 
-	handleClick(id) {
-		this.setState({
-			currentFocus: id
+	handleClick(id, top) {
+		window.scrollTo({
+			top,
+			behavior: "smooth"
 		})
 	}
+	handleScroll(focus) {
+		clearTimeout(this.timerId)
+		this.timerId = null
+		this.timerId = setTimeout(() => {
+			if (!this.unmounted) {
+				this.setState({
+					currentFocus: focus
+				})
+			}
+		}, 100)
+	}
+	componentWillUnmount() {
+		this.unmounted = true
+	}
+	// componentWillReceiveProps(nextProps) {
+	// 	if (this.state.currentFocus !== "1" && nextProps.position < 1200) {
+	// 		this.handleScroll("1")
+	// 	} else if (
+	// 		this.state.currentFocus !== "2" &&
+	// 		(nextProps.position < 1700 && nextProps.position >= 1200)
+	// 	) {
+	// 		this.handleScroll("2")
+	// 	} else if (this.state.currentFocus !== "3" && nextProps.position > 1700) {
+	// 		this.handleScroll("3")
+	// 	}
+	// }
+	getSnapshotBeforeUpdate(prevProps, prevState) {
+		return this.props.position
+	}
+	componentDidUpdate(prevProps, prevState, snapshot) {
+		if (this.state.currentFocus !== "1" && snapshot < 1200) {
+			this.handleScroll("1")
+		} else if (this.state.currentFocus !== "2" && (snapshot < 2000 && snapshot >= 1200)) {
+			this.handleScroll("2")
+		} else if (this.state.currentFocus !== "3" && snapshot >= 2000) {
+			this.handleScroll("3")
+		}
+	}
+	// componentDidMount(){}
+
 	render() {
 		const { currentFocus } = this.state
 		const renderFocus = (
@@ -31,36 +72,30 @@ export default class Brand extends React.Component {
 					<li
 						className={`nav-item ${currentFocus === "1" ? "focus" : ""}`}
 						id="1"
-						onMouseEnter={this.handleMouseEnter}
-						onClick={() => this.handleClick("1")}
+						onClick={() => this.handleClick("1", 0)}
 					>
 						{currentFocus === "1" ? renderFocus : ""}
-						<a>Works</a>
+						Works
 					</li>
 					<li
 						className={`nav-item  ${currentFocus === "2" ? "focus" : ""} `}
 						id="2"
-						onMouseEnter={this.handleMouseEnter}
-						onClick={() => this.handleClick("2")}
+						onClick={() => this.handleClick("2", 1600)}
 					>
 						{currentFocus === "2" ? renderFocus : ""}
-						<a>Skills</a>
+						About
 					</li>
 					<li
 						className={`nav-item  ${currentFocus === "3" ? "focus" : ""}`}
 						id="3"
-						onMouseEnter={this.handleMouseEnter}
-						onClick={() => this.handleClick("3")}
+						onClick={() => this.handleClick("3", 2200)}
 					>
-						{currentFocus === "3" ? renderFocus : ""} <a>Contact</a>
+						{currentFocus === "3" ? renderFocus : ""} Contact
 					</li>
-					<li
-						className={`nav-item  ${currentFocus === "4" ? "focus" : ""}`}
-						id="4"
-						onMouseEnter={this.handleMouseEnter}
-						onClick={() => this.handleClick("4")}
-					>
-						{currentFocus === "4" ? renderFocus : ""} <a>Github Repo</a>
+					<li className={"nav-item external-link"}>
+						<a href="http://www.github.com/540376482yzb" target="_blank">
+							Github Repo
+						</a>
 					</li>
 				</ul>
 			</div>

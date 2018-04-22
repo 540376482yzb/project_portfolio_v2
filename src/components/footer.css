@@ -1,0 +1,38 @@
+.footer {
+	padding: 20px 20px 100px 20px;
+	background-color: #212121;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-evenly;
+	width: 100%;
+	border-radius: 5px;
+}
+.contact-box {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.contact-btn,
+.contact-btn:link {
+	display: inline-block;
+	padding: 10px 50px;
+	background-color: rgb(216, 105, 62);
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+}
+.icon {
+	display: inline-block;
+	height: 40px;
+	margin: 0 5px;
+}
+
+@media only screen and (min-width: 800px) {
+	.contact-box {
+		width: 49%;
+	}
+}

@@ -15,5 +15,17 @@
 			"https://kind-lamport-ae36bd.netlify.com/landing",
 			"https://github.com/540376482yzb/intercities_ride_sharing_client"
 		]
+	},
+	{
+		"title": "Portfolio_v2",
+		"stacks": ["React", "Mobile first", "Responsive", "Javascript", "Netlify"],
+		"desc": [
+			"This portfolio web site is a rework for my original portfolio web site which is built with jQuery and css. It's fully interactive with rich animation and minimalist design. Thanks to React Virtual DOM, new portfolio site is speedy fast, powerful and fun to use."
+		],
+		"imgUrls": ["images/p2_0.PNG", "images/p2_1.PNG", "images/p2_2.PNG"],
+		"links": [
+			"https://kind-lamport-ae36bd.netlify.com/landing",
+			"https://github.com/540376482yzb/intercities_ride_sharing_client"
+		]
 	}
 ]

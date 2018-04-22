@@ -37,10 +37,7 @@
 .nav-item span {
 	display: inline-block;
 }
-.nav-tiem a {
-	display: inline-block;
-	min-height: 36px;
-}
+
 .tab-icon-container {
 	width: 36px;
 }

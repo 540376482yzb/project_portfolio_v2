@@ -52,24 +52,28 @@ export default class Project extends React.Component {
 				</span>
 			)
 		})
-		const renderDesc = desc.map(sentence => {
-			return <p>{sentence}</p>
+		const renderDesc = desc.map((sentence, index) => {
+			return <p key={index}>{sentence}</p>
 		})
 
 		const actions = (
 			<div className="control-group fix-bottom">
 				<span
-					className={` ${slideIndex === 0 ? "fade" : ""} control-button control-left animated rubberBand`}
+					className={` ${
+						slideIndex === 0 ? "fade" : ""
+					} control-button control-left animated rubberBand`}
 					onClick={() => this.handleOnClick("left")}
 				>
-					<ChevronLeftIcon size={48} />
+					<ChevronLeftIcon size={48} color={"#009688"} />
 				</span>
 
 				<span
-					className={` ${slideIndex === 2 ? "fade" : ""} control-button control-right animated rubberBand`}
+					className={` ${
+						slideIndex === 2 ? "fade" : ""
+					} control-button control-right animated rubberBand`}
 					onClick={() => this.handleOnClick("right")}
 				>
-					<ChevronRightIcon size={48} />
+					<ChevronRightIcon size={48} color={"#009688"} />
 				</span>
 				<span className="control-button control-close" onClick={this.handleClose}>
 					<CloseIcon size={36} />
@@ -81,9 +85,21 @@ export default class Project extends React.Component {
 		const renderBigScreenImage = (
 			<section className="body-right">
 				<div className="body-right-image-container">
-					<img src={imgUrls[0]} alt={title} className={`body-right-image ${slideIndex !== 0 ? "hidden" : ""}`} />
-					<img src={imgUrls[1]} alt={title} className={`body-right-image ${slideIndex !== 1 ? "hidden" : ""}`} />
-					<img src={imgUrls[2]} alt={title} className={`body-right-image ${slideIndex !== 2 ? "hidden" : ""}`} />
+					<img
+						src={imgUrls[0]}
+						alt={title}
+						className={`body-right-image ${slideIndex !== 0 ? "hidden" : ""}`}
+					/>
+					<img
+						src={imgUrls[1]}
+						alt={title}
+						className={`body-right-image ${slideIndex !== 1 ? "hidden" : ""}`}
+					/>
+					<img
+						src={imgUrls[2]}
+						alt={title}
+						className={`body-right-image ${slideIndex !== 2 ? "hidden" : ""}`}
+					/>
 				</div>
 				{actions}
 			</section>
@@ -128,7 +144,9 @@ export default class Project extends React.Component {
 						</a>
 					</div>
 				</section>
-				<Media query="(max-width: 580px)">{matches => (matches ? renderSmallScreenImag : renderBigScreenImage)}</Media>
+				<Media query="(max-width: 580px)">
+					{matches => (matches ? renderSmallScreenImag : renderBigScreenImage)}
+				</Media>
 			</main>
 		)
 	}
