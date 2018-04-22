@@ -49,9 +49,9 @@ export default class Menu extends React.Component {
 		return this.props.position
 	}
 	componentDidUpdate(prevProps, prevState, snapshot) {
-		if (this.state.currentFocus !== "1" && snapshot < 1200) {
+		if (this.state.currentFocus !== "1" && snapshot < 1000) {
 			this.handleScroll("1")
-		} else if (this.state.currentFocus !== "2" && (snapshot < 2000 && snapshot >= 1200)) {
+		} else if (this.state.currentFocus !== "2" && (snapshot < 2000 && snapshot >= 1000)) {
 			this.handleScroll("2")
 		} else if (this.state.currentFocus !== "3" && snapshot >= 2000) {
 			this.handleScroll("3")
@@ -80,7 +80,7 @@ export default class Menu extends React.Component {
 					<li
 						className={`nav-item  ${currentFocus === "2" ? "focus" : ""} `}
 						id="2"
-						onClick={() => this.handleClick("2", 1600)}
+						onClick={() => this.handleClick("2", 1500)}
 					>
 						{currentFocus === "2" ? renderFocus : ""}
 						About
@@ -88,12 +88,12 @@ export default class Menu extends React.Component {
 					<li
 						className={`nav-item  ${currentFocus === "3" ? "focus" : ""}`}
 						id="3"
-						onClick={() => this.handleClick("3", 2200)}
+						onClick={() => this.handleClick("3", 2000)}
 					>
 						{currentFocus === "3" ? renderFocus : ""} Contact
 					</li>
 					<li className={"nav-item external-link"}>
-						<a href="http://www.github.com/540376482yzb" target="_blank">
+						<a href="http://www.github.com/540376482yzb" target="_blank" rel="noopener noreferrer">
 							Github Repo
 						</a>
 					</li>

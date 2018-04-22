@@ -66,11 +66,20 @@
 }
 
 @media only screen and (min-width: 580px) {
+	.about-header {
+		min-height: 250px;
+	}
+	.avatar {
+		transform: translateY(180px);
+	}
 	.job-title {
 		width: 400px;
 	}
 	.about-status {
 		width: 280px;
 		padding-left: 50px;
+	}
+	.about-body {
+		padding-top: 25px;
 	}
 }

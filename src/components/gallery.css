@@ -94,7 +94,7 @@ main[role="main"] {
 .body-right-image {
 	display: block;
 	margin: 0 auto;
-	height: 450px;
+	height: 430px;
 }
 
 .control-group {
@@ -149,7 +149,8 @@ main[role="main"] {
 		position: relative;
 	}
 	.body-right-image {
-		height: 430px;
+		max-width: 350px;
+		max-height: 430px;
 	}
 	.hidden {
 		display: none;

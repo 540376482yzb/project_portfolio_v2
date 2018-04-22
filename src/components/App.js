@@ -45,7 +45,9 @@ class App extends Component {
 			) : (
 				""
 			)
-		const project = projects[0]
+		const project1 = projects[0]
+		const project2 = projects[1]
+		const project3 = projects[2]
 		return (
 			<div className="App" id="app">
 				<nav className="navbar">
@@ -60,33 +62,33 @@ class App extends Component {
 				<main className="gallery-container" id="works">
 					<Gallery
 						key="0"
-						title={project.title}
-						stacks={project.stacks}
-						desc={project.desc}
-						imgUrls={project.imgUrls}
-						links={project.links}
+						title={project1.title}
+						stacks={project1.stacks}
+						desc={project1.desc}
+						imgUrls={project1.imgUrls}
+						links={project1.links}
 						open={this.state.open}
 						handleOpen={() => this.setState({ open: true })}
 						handleClose={() => this.setState({ open: false })}
 					/>
 					<Gallery
 						key="1"
-						title={project.title}
-						stacks={project.stacks}
-						desc={project.desc}
-						imgUrls={project.imgUrls}
-						links={project.links}
+						title={project2.title}
+						stacks={project2.stacks}
+						desc={project2.desc}
+						imgUrls={project2.imgUrls}
+						links={project2.links}
 						open={this.state.open}
 						handleOpen={() => this.setState({ open: true })}
 						handleClose={() => this.setState({ open: false })}
 					/>
 					<Gallery
 						key="2"
-						title={project.title}
-						stacks={project.stacks}
-						desc={project.desc}
-						imgUrls={project.imgUrls}
-						links={project.links}
+						title={project3.title}
+						stacks={project3.stacks}
+						desc={project3.desc}
+						imgUrls={project3.imgUrls}
+						links={project3.links}
 						open={this.state.open}
 						handleOpen={() => this.setState({ open: true })}
 						handleClose={() => this.setState({ open: false })}

@@ -133,10 +133,10 @@ export default class Project extends React.Component {
 					<div className="body-left-chips-container">{renderChips}</div>
 					<div className="body-left-desc">{renderDesc}</div>
 					<div className="body-left-link-container">
-						<a href={links[0]} className="body-left-link">
+						<a href={links[0]} target="_blank" rel="noopener noreferrer" className="body-left-link">
 							Live demo
 						</a>
-						<a href={links[1]} className="body-left-link">
+						<a href={links[1]} target="_blank" rel="noopener noreferrer" className="body-left-link">
 							Code repo
 						</a>
 						<a className="body-left-link play-button" onClick={this.handleOpen}>
