@@ -49,9 +49,9 @@ export default class Menu extends React.Component {
 		return this.props.position
 	}
 	componentDidUpdate(prevProps, prevState, snapshot) {
-		if (this.state.currentFocus !== "1" && snapshot < 1000) {
+		if (this.state.currentFocus !== "1" && snapshot < 700) {
 			this.handleScroll("1")
-		} else if (this.state.currentFocus !== "2" && (snapshot < 2000 && snapshot >= 1000)) {
+		} else if (this.state.currentFocus !== "2" && (snapshot < 2000 && snapshot >= 700)) {
 			this.handleScroll("2")
 		} else if (this.state.currentFocus !== "3" && snapshot >= 2000) {
 			this.handleScroll("3")
@@ -75,15 +75,15 @@ export default class Menu extends React.Component {
 						onClick={() => this.handleClick("1", 0)}
 					>
 						{currentFocus === "1" ? renderFocus : ""}
-						Works
+						About
 					</li>
 					<li
 						className={`nav-item  ${currentFocus === "2" ? "focus" : ""} `}
 						id="2"
-						onClick={() => this.handleClick("2", 1500)}
+						onClick={() => this.handleClick("2", 1000)}
 					>
 						{currentFocus === "2" ? renderFocus : ""}
-						About
+						Works
 					</li>
 					<li
 						className={`nav-item  ${currentFocus === "3" ? "focus" : ""}`}

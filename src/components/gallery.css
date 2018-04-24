@@ -9,7 +9,7 @@ main[role="main"] {
 	justify-content: space-around;
 	color: black;
 	padding: 0px 20px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .body-left {
@@ -19,7 +19,6 @@ main[role="main"] {
 	width: 100%;
 	text-align: center;
 	/* z-index: 1100; */
-	height: 500px;
 }
 
 .body-left-title {
@@ -105,10 +104,18 @@ main[role="main"] {
 	width: 100%;
 	position: relative;
 }
+.fix-bottom {
+	position: absolute;
+	bottom: 50px;
+	z-index: 1;
+}
+
 .control-button {
 	display: block;
 	padding: 2px;
 	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .control-button:hover {
@@ -130,6 +137,7 @@ main[role="main"] {
 	.body-left {
 		width: 50%;
 		height: 100%;
+		min-height: 500px;
 	}
 
 	.body-right-image-container {

@@ -19,9 +19,11 @@ export default class Project extends React.Component {
 
 	handleOpen() {
 		this.props.handleOpen()
+		this.props.hideHeader()
 	}
 	handleClose() {
 		this.props.handleClose()
+		this.props.showHeader()
 	}
 	handleChange(value) {
 		this.setState({
@@ -113,7 +115,7 @@ export default class Project extends React.Component {
 				open={open}
 				onRequestClose={this.handleClose}
 			>
-				<div>
+				<div style={{ position: "relative" }}>
 					<SwipeableViews index={slideIndex} onChangeIndex={this.handleChange}>
 						<img src={imgUrls[0]} alt={title} className="body-right-image" />
 						<img src={imgUrls[1]} alt={title} className="body-right-image" />

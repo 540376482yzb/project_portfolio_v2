@@ -11,7 +11,8 @@ class App extends Component {
 		super(props)
 		this.state = {
 			scrollPosition: 0,
-			open: false
+			open: false,
+			hideHeader: false
 		}
 		this.handleScroll = this.handleScroll.bind(this)
 	}
@@ -36,9 +37,9 @@ class App extends Component {
 		window.addEventListener("scroll", this.handleScroll)
 	}
 	render() {
-		const { scrollPosition } = this.state
+		const { scrollPosition, hideHeader } = this.state
 		const stickyNav =
-			scrollPosition > 200 ? (
+			scrollPosition > 200 && !hideHeader ? (
 				<div className="sticky-nav animated fadeInDown">
 					<Menu position={this.scrollPosition} />
 				</div>
@@ -59,6 +60,12 @@ class App extends Component {
 					</section>
 				</nav>
 				{stickyNav}
+				<br />
+				<section id="about">
+					<About />
+				</section>
+
+				<br />
 				<main className="gallery-container" id="works">
 					<Gallery
 						key="0"
@@ -70,6 +77,8 @@ class App extends Component {
 						open={this.state.open}
 						handleOpen={() => this.setState({ open: true })}
 						handleClose={() => this.setState({ open: false })}
+						hideHeader={() => this.setState({ hideHeader: true })}
+						showHeader={() => this.setState({ hideHeader: false })}
 					/>
 					<Gallery
 						key="1"
@@ -81,6 +90,8 @@ class App extends Component {
 						open={this.state.open}
 						handleOpen={() => this.setState({ open: true })}
 						handleClose={() => this.setState({ open: false })}
+						hideHeader={() => this.setState({ hideHeader: true })}
+						showHeader={() => this.setState({ hideHeader: false })}
 					/>
 					<Gallery
 						key="2"
@@ -92,12 +103,16 @@ class App extends Component {
 						open={this.state.open}
 						handleOpen={() => this.setState({ open: true })}
 						handleClose={() => this.setState({ open: false })}
+						hideHeader={() => this.setState({ hideHeader: true })}
+						showHeader={() => this.setState({ hideHeader: false })}
 					/>
 				</main>
-				<section id="about">
-					<About />
-				</section>
+
 				<section id="contact">
+					<br />
+					<br />
+					<br />
+					<br />
 					<Footer />
 				</section>
 			</div>
