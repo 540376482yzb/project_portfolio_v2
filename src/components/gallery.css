@@ -9,6 +9,7 @@ main[role="main"] {
 	justify-content: space-around;
 	color: black;
 	padding: 0px 20px;
+	padding-bottom: 20px;
 	margin-bottom: 5px;
 }
 

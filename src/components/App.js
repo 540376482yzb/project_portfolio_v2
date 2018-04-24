@@ -11,7 +11,6 @@ class App extends Component {
 		super(props)
 		this.state = {
 			scrollPosition: 0,
-			open: false,
 			hideHeader: false
 		}
 		this.handleScroll = this.handleScroll.bind(this)
@@ -74,9 +73,6 @@ class App extends Component {
 						desc={project1.desc}
 						imgUrls={project1.imgUrls}
 						links={project1.links}
-						open={this.state.open}
-						handleOpen={() => this.setState({ open: true })}
-						handleClose={() => this.setState({ open: false })}
 						hideHeader={() => this.setState({ hideHeader: true })}
 						showHeader={() => this.setState({ hideHeader: false })}
 					/>
@@ -87,9 +83,6 @@ class App extends Component {
 						desc={project2.desc}
 						imgUrls={project2.imgUrls}
 						links={project2.links}
-						open={this.state.open}
-						handleOpen={() => this.setState({ open: true })}
-						handleClose={() => this.setState({ open: false })}
 						hideHeader={() => this.setState({ hideHeader: true })}
 						showHeader={() => this.setState({ hideHeader: false })}
 					/>
@@ -100,9 +93,6 @@ class App extends Component {
 						desc={project3.desc}
 						imgUrls={project3.imgUrls}
 						links={project3.links}
-						open={this.state.open}
-						handleOpen={() => this.setState({ open: true })}
-						handleClose={() => this.setState({ open: false })}
 						hideHeader={() => this.setState({ hideHeader: true })}
 						showHeader={() => this.setState({ hideHeader: false })}
 					/>

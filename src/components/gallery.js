@@ -10,7 +10,8 @@ export default class Project extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			slideIndex: 0
+			slideIndex: 0,
+			open: false
 		}
 		this.handleOpen = this.handleOpen.bind(this)
 		this.handleClose = this.handleClose.bind(this)
@@ -18,12 +19,14 @@ export default class Project extends React.Component {
 	}
 
 	handleOpen() {
-		this.props.handleOpen()
-		this.props.hideHeader()
+		this.setState({
+			open: true
+		})
 	}
 	handleClose() {
-		this.props.handleClose()
-		this.props.showHeader()
+		this.setState({
+			open: false
+		})
 	}
 	handleChange(value) {
 		this.setState({
@@ -44,8 +47,8 @@ export default class Project extends React.Component {
 		}
 	}
 	render() {
-		const { title, stacks, desc, imgUrls, links, open } = this.props
-		const { slideIndex } = this.state
+		const { title, stacks, desc, imgUrls, links } = this.props
+		const { slideIndex, open } = this.state
 		if (!this.props.imgUrls) return null
 		const renderChips = stacks.map((stack, index) => {
 			return (
@@ -107,7 +110,7 @@ export default class Project extends React.Component {
 			</section>
 		)
 
-		const renderSmallScreenImag = (
+		const renderSmallScreenImag = open ? (
 			<Dialog
 				contentStyle={{ width: "100%" }}
 				paperClassName="dialog"
@@ -124,6 +127,8 @@ export default class Project extends React.Component {
 					{actions}
 				</div>
 			</Dialog>
+		) : (
+			""
 		)
 
 		return (
@@ -146,7 +151,7 @@ export default class Project extends React.Component {
 						</a>
 					</div>
 				</section>
-				<Media query="(max-width: 580px)">
+				<Media query="(max-width: 799px)">
 					{matches => (matches ? renderSmallScreenImag : renderBigScreenImage)}
 				</Media>
 			</main>
