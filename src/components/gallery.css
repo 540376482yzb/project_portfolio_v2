@@ -6,11 +6,13 @@ main[role="main"] {
 	border-radius: 5px;
 	background: white;
 	display: flex;
-	justify-content: space-around;
 	color: black;
 	padding: 0px 20px;
 	padding-bottom: 20px;
 	margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .body-left {
@@ -61,126 +63,29 @@ main[role="main"] {
 	color: rgb(78, 136, 230);
 }
 
-.play-button {
-	margin-left: 20px;
-	cursor: pointer;
-}
-.play-button:hover {
-	animation: spin 1s linear;
-	-webkit-animation: spin 1s linear;
-	-moz-animation: spin 1s linear;
-}
-
-@-moz-keyframes spin {
-	100% {
-		-moz-transform: rotate(360deg);
-	}
-}
-@-webkit-keyframes spin {
-	100% {
-		-webkit-transform: rotate(360deg);
-	}
-}
-@keyframes spin {
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-.body-right {
-	display: none;
-}
-.body-right-image {
-	display: block;
-	margin: 0 auto;
-	height: 430px;
-}
-
-.control-group {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
+.project-img-container {
 	width: 100%;
-	position: relative;
-}
-.fix-bottom {
-	position: absolute;
-	bottom: 50px;
-	z-index: 1;
-}
-
-.control-button {
-	display: block;
-	padding: 2px;
-	cursor: pointer;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-.control-button:hover {
-	animation-duration: 2s;
-	animation-delay: -0s;
-	animation-iteration-count: infinite;
-}
-
-.control-close {
-	position: absolute;
-	bottom: 0;
-	right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media only screen and (min-width: 800px) {
 	main[role="main"] {
 		padding-bottom: 20px;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
 	}
 	.body-left {
 		width: 50%;
 		height: 100%;
 		min-height: 500px;
 	}
-
-	.body-right-image-container {
+	.project-img-container {
+		width: 50%;
 		display: flex;
-		justify-content: center;
-		overflow: hidden;
-		width: 350px;
-		border-radius: 10px;
-	}
-
-	.body-right {
-		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		height: 500px;
-		position: relative;
-	}
-	.body-right-image {
-		max-width: 350px;
-		max-height: 430px;
-	}
-	.hidden {
-		display: none;
-	}
-	.fade {
-		opacity: 0;
-	}
-	.fix-bottom {
-		position: absolute;
-		bottom: 50px;
-		z-index: 1;
-		bottom: 35px;
-	}
-	.control-button {
-		margin-right: 20px;
-		margin-left: 20px;
-	}
-	.control-close {
-		display: none;
-	}
-	.play-button {
-		display: none;
 	}
 }

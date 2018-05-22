@@ -71,27 +71,29 @@ class App extends Component {
 						title={project1.title}
 						stacks={project1.stacks}
 						desc={project1.desc}
-						imgUrls={project1.imgUrls}
+						imgUrl={project1.imgUrl}
 						links={project1.links}
 						hideHeader={() => this.setState({ hideHeader: true })}
 						showHeader={() => this.setState({ hideHeader: false })}
 					/>
+					<br />
 					<Gallery
 						key="1"
 						title={project2.title}
 						stacks={project2.stacks}
 						desc={project2.desc}
-						imgUrls={project2.imgUrls}
+						imgUrl={project2.imgUrl}
 						links={project2.links}
 						hideHeader={() => this.setState({ hideHeader: true })}
 						showHeader={() => this.setState({ hideHeader: false })}
 					/>
+					<br />
 					<Gallery
 						key="2"
 						title={project3.title}
 						stacks={project3.stacks}
 						desc={project3.desc}
-						imgUrls={project3.imgUrls}
+						imgUrl={project3.imgUrl}
 						links={project3.links}
 						hideHeader={() => this.setState({ hideHeader: true })}
 						showHeader={() => this.setState({ hideHeader: false })}
