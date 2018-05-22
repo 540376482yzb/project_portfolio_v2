@@ -63,7 +63,6 @@ class App extends Component {
 				<section id="about">
 					<About />
 				</section>
-
 				<br />
 				<main className="gallery-container" id="works">
 					<Gallery

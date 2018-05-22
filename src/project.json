@@ -1,5 +1,26 @@
 [
 	{
+		"title": "Schedio",
+		"stacks": [
+			"React",
+			"Redux",
+			"Node",
+			"Express",
+			"MongoDB",
+			"Responsive",
+			"CICD with mocha and tavis-ci",
+			"Agile",
+			"team project",
+			"Web apis"
+		],
+		"desc": [
+			"Schedio is an event planning app that features configurable widgets for multiple purposes. Schedio is easily scalable because of our modular architecture design both front end and back end.",
+			"The completion of this project is a team effort and it won't be successful without team members strictly following contribution rules and set workflow."
+		],
+		"imgUrl": "images/schedio.png",
+		"links": ["https://schedio.netlify.com/", "https://github.com/540376482yzb/schedio-client"]
+	},
+	{
 		"title": "Simlify",
 		"stacks": [
 			"Space Repetition Algorithm",
@@ -18,10 +39,7 @@
 			"Spaced repetition is learning technique; Every day, you will review new, learned, and unlearned words in Simlify. Over time, words you've learned will appear less often and words you're still learning will appear more often. For now, our app will feature 10 words from the Simlish language."
 		],
 		"imgUrl": "images/simlify-desk.png",
-		"links": [
-			"https://simlish2.netlify.com/",
-			"https://github.com/540376482yzb/simlify_client"
-		]
+		"links": ["https://simlish2.netlify.com/", "https://github.com/540376482yzb/simlify_client"]
 	},
 	{
 		"title": "Ride and share",
@@ -35,18 +53,6 @@
 		"links": [
 			"https://rideandshare.netlify.com/landing",
 			"https://github.com/540376482yzb/intercities_ride_sharing_client"
-		]
-	},
-	{
-		"title": "Portfolio_v2",
-		"stacks": ["React", "Mobile first", "Responsive", "Javascript", "Netlify"],
-		"desc": [
-			"This portfolio web site is a rework for my original portfolio web site which is built with jQuery and css. It's fully interactive with rich animation and minimalist design. Thanks to React Virtual DOM, new portfolio site is speedy fast, powerful and fun to browse through."
-		],
-		"imgUrl": "images/simlify-desk.png",
-		"links": [
-			"https://romantic-kare-c067ba.netlify.com/",
-			"https://github.com/540376482yzb/project_portfolio_v2"
 		]
 	}
 ]

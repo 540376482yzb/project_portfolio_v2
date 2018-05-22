@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./gallery.css"
 export default class Project extends React.Component {
 	render() {
@@ -31,12 +32,12 @@ export default class Project extends React.Component {
 					</header>
 					<div className="body-left-desc">{renderDesc}</div>
 					<div className="body-left-link-container">
-						<a href={links[0]} target="_blank" rel="noopener noreferrer" className="body-left-link">
-							Live demo
-						</a>
-						<a href={links[1]} target="_blank" rel="noopener noreferrer" className="body-left-link">
-							Code repo
-						</a>
+						<Link to={links[0]} target="_blank" className="body-left-link">
+							<button>Demo </button>
+						</Link>
+						<Link to={links[1]} target="_blank" className="body-left-link">
+							<button>Code repo</button>
+						</Link>
 					</div>
 					<br />
 					<div className="body-left-chips-container">{renderChips}</div>
