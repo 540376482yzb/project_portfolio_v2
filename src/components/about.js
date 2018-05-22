@@ -27,8 +27,9 @@ export default function About(props) {
 					</p>
 					<p>
 						Wise man once said<cite>"A man becomes learned by asking questions."</cite> To stay
-						relevant with tending technology we all have to learn from and share with each other, because we are
-						insignificant as individual but we are able to achieve the impossible as a whole.
+						relevant with trending technology we all have to learn from and share with each other,
+						because we are insignificant as individual but we are able to achieve the impossible as
+						a whole.
 					</p>
 					<br />
 				</div>
