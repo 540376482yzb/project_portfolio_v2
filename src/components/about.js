@@ -12,26 +12,25 @@ export default function About(props) {
 			</header>
 			<section className="about-body">
 				<div className="job-title">
-					<code>Software Engineer && Web Developer</code>
+					<span>Software Engineer && Web Developer</span>
 				</div>
 				<div className="about-status hirable">
 					<span>Status :</span> <MdCheckCircle size={18.67} />
-					<code>Hirable</code>
+					<span>Hirable</span>
 				</div>
 				<div className="about-introduction">
-					<br />
 					<p>
 						Hi, I am a Javawscript developer in Sacramento,CA.I use MERN stack to build app that is
-						secure, reliable and performant. Why MERN stack you might ask? because they work well
-						together while remain non-opinionated at the same time.
+						secure, reliable and performant.
 					</p>
 					<p>
-						Wise man once said<cite>"A man becomes learned by asking questions."</cite> To stay
-						relevant with trending technology we all have to learn from and share with each other,
-						because we are insignificant as individual but we are able to achieve the impossible as
-						a whole.
+						I have been coding in Javascript for a year. I found passion building scalable web
+						applications and learning new technology.
 					</p>
-					<br />
+					<p>
+						I am excited to work with great team to build top-notch products that can be used by
+						people around the world.
+					</p>
 				</div>
 			</section>
 		</div>

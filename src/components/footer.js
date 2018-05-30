@@ -24,7 +24,14 @@ export default function Footer(props) {
 			<div className="contact-box">
 				<h2>Let's work together!</h2>
 				<a className="contact-btn" href="mailto:zhy0319@gmail.com">
-					Connect
+					<img
+						src="images/gmail.png"
+						alt="gmail"
+						width="35px"
+						height="35px"
+						style={{marginRight: "5px"}}
+					/>{" "}
+					Contact me
 				</a>
 			</div>
 		</footer>

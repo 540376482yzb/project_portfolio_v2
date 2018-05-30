@@ -21,6 +21,20 @@
 		"links": ["https://schedio.netlify.com/", "https://github.com/540376482yzb/schedio-client"]
 	},
 	{
+		"title": "Ride & share",
+		"stacks": ["React", "Redux", "Express", "Mongodb", "Google Map API", "Socket.io"],
+		"desc": [
+			"This app aims to provide a completely community driven ride sharing services, in which people have freedom to exchange trip infomation and ride together.",
+			"Besides MERN stack, this app used Google Map API to predict and autocomplete location address and utilized Socket.io library to enable real-time communication."
+		],
+		"imgUrl": "images/rideshare_imac2015_front.png",
+
+		"links": [
+			"https://rideandshare.netlify.com/landing",
+			"https://github.com/540376482yzb/intercities_ride_sharing_client"
+		]
+	},
+	{
 		"title": "Simlify",
 		"stacks": [
 			"Space Repetition Algorithm",
@@ -34,25 +48,12 @@
 			"Heroku",
 			"team project"
 		],
+
 		"desc": [
 			"Simlify is an app that teaches Simlish using spaced repetition. Simlish is a fictional language featured in The Sims, a video-game franchise by EA Games.",
 			"Spaced repetition is learning technique; Every day, you will review new, learned, and unlearned words in Simlify. Over time, words you've learned will appear less often and words you're still learning will appear more often. For now, our app will feature 10 words from the Simlish language."
 		],
 		"imgUrl": "images/simlify-desk.png",
 		"links": ["https://simlish2.netlify.com/", "https://github.com/540376482yzb/simlify_client"]
-	},
-	{
-		"title": "Ride and share",
-		"stacks": ["React", "Redux", "Express", "Mongodb", "Google Map API", "Socket.io"],
-		"desc": [
-			"This app aims to provide a completely community driven ride sharing services, in which people have freedom to exchange trip infomation and ride together.",
-			"Besides MERN stack, this app used Google Map API to predict and autocomplete location address and utilized Socket.io library to enable real-time communication."
-		],
-		"imgUrl": "images/rideandshare.png",
-
-		"links": [
-			"https://rideandshare.netlify.com/landing",
-			"https://github.com/540376482yzb/intercities_ride_sharing_client"
-		]
 	}
 ]
