@@ -17,16 +17,19 @@ export default function About(props) {
 					<span>Hirable</span>
 				</div>
 				<div className="about-introduction">
-		
 					<p>
-					Hi, I am a Javascript developer in Sacramento,CA. I use the MERN stack to build apps that are secure, reliable and efficient. I love building scalable web applications and learning new technology. 
+						Hi, I am a Javascript developer in Sacramento,CA. I use the MERN stack to build apps
+						that are secure, reliable and efficient. I love building scalable web applications and
+						learning new technology.
 					</p>
 					<p>
-						I love repairing and hacking things in life. I have built wooden table and bed-frame for my own bedroom and added DIY motion sensor kit to light up lamp automatically. I used to offer service in my college for fixing crack screens or malfunction parts.
+						I also love repairing and hacking things offline. I recently built a wooden table and
+						bed-frame for myself and added a DIY motion sensor kit to light up my lamp
+						automatically. In college, I used to fix cracked screens or malfunction parts on other
+						students devices.
 					</p>
 					<p>
-						I am excited to work with great team to build top-notch products that can be used by
-						people around the world.
+						I am excited to work with a great team to build top-notch products that change lives.
 					</p>
 				</div>
 			</section>
