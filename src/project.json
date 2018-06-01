@@ -10,12 +10,13 @@
 			"Responsive",
 			"CICD with mocha and tavis-ci",
 			"Agile",
+			"Material UI",
 			"team project",
 			"Web apis"
 		],
 		"desc": [
 			"Schedio is an event planning app that features configurable widgets for multiple purposes. Schedio is easily scalable because of our modular architecture design both front end and back end.",
-			"The completion of this project is a team effort and it won't be successful without team members strictly following contribution rules and set workflow."
+			"The completion of this project is a team effort and it won't be successful without my team: Matt San Pedro, Evan Garrett and Saugat Dhungel."
 		],
 		"imgUrl": "images/schedio.png",
 		"links": ["https://schedio.netlify.com/", "https://github.com/540376482yzb/schedio-client"]
@@ -24,8 +25,8 @@
 		"title": "Ride & share",
 		"stacks": ["React", "Redux", "Express", "Mongodb", "Google Map API", "Socket.io"],
 		"desc": [
-			"This app aims to provide a completely community driven ride sharing services, in which people have freedom to exchange trip infomation and ride together.",
-			"Besides MERN stack, this app used Google Map API to predict and autocomplete location address and utilized Socket.io library to enable real-time communication."
+			"This app aims to provide a completely community driven ride sharing service, in which people have the freedom to exchange trip information, as well as ride together.",
+			"Besides the MERN stack, this app uses the Google Map API to predict and autocomplete location address and utilizes the Socket.io library to enable real-time communication."
 		],
 		"imgUrl": "images/rideshare_imac2015_front.png",
 
@@ -46,13 +47,12 @@
 			"Responsive",
 			"Netlify",
 			"Heroku",
-			"Material UI",
 			"team project"
 		],
 
 		"desc": [
 			"Simlify is an app that teaches Simlish using spaced repetition. Simlish is a fictional language featured in The Sims, a video-game franchise by EA Games.",
-			"Spaced repetition is learning technique; Every day, you will review new, learned, and unlearned words in Simlify. Over time, words you've learned will appear less often and words you're still learning will appear more often. For now, our app will feature 10 words from the Simlish language."
+			"Spaced repetition is common education technique that uses repetition to add memorization.  Every day, you will review new, learned, and unlearned words in Simlify. Over time, words you've learned will appear less often and words you're still learning will appear more often. For now, this app features a starter set of 10 words from the Simlish language."
 		],
 		"imgUrl": "images/simlify-desk.png",
 		"links": ["https://simlish2.netlify.com/", "https://github.com/540376482yzb/simlify_client"]
