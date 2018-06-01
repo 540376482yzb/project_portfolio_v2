@@ -33,6 +33,7 @@ class App extends Component {
 		}
 	}
 	componentDidMount() {
+		console.log('hello')
 		window.addEventListener("scroll", this.handleScroll)
 	}
 	render() {

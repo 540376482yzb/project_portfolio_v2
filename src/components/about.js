@@ -11,9 +11,7 @@ export default function About(props) {
 				</div>
 			</header>
 			<section className="about-body">
-				<div className="job-title">
-					<span>Software Engineer && Web Developer</span>
-				</div>
+				<div className="job-title">Software Engineer && Web Developer</div>
 				<div className="about-status hirable">
 					<span>Status :</span> <MdCheckCircle size={18.67} />
 					<span>Hirable</span>

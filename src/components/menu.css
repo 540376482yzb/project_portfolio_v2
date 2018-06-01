@@ -9,8 +9,6 @@
 	display: flex;
 	background-color: white;
 	width: 100%;
-	-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
-	clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
 	justify-content: space-around;
 	align-items: center;
 	padding-left: 10px;
