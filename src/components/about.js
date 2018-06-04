@@ -7,7 +7,7 @@ export default function About(props) {
 		<div className="about">
 			<header className="about-header">
 				<div className="avatar-container">
-					<img src="/images/avatar.png" alt="avatar" className="avatar" />
+					<img src="images/avatar.png" alt="avatar" className="avatar" />
 				</div>
 			</header>
 			<section className="about-body">
